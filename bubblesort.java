@@ -1,5 +1,5 @@
-public static void bubblesort (int v [ ]) {
-  int end = v.length - 2;
+public static void bubblesort (int a [ ]) {
+  int end = a.length - 2;
   int pos = 0;
   boolean swap = true;
   int value;
@@ -7,8 +7,8 @@ public static void bubblesort (int v [ ]) {
   while (swap == true) {
     swap = false;
     for (i = 0; i <= end; i++) {
-      if (v[i] > v[i+1]) {
-        value = v[i]; v[i] = v[i+1]; v[i+1] = value;
+      if (a[i] > a[i+1]) {
+        value = a[i]; a[i] = a[i+1]; a[i+1] = value;
         pos = i; swap = true;
       }
     }
